@@ -18,10 +18,6 @@ class PaymentGatewayStripeServiceProvider extends ServiceProvider
             base_path('resources/views'),
             __DIR__.'/../Resources/views',
         ]);
-
-        $this->publishes([
-            __DIR__.'/../../../config/payment-gateway-stripe.php' => config_path('payment-gateway-stripe.php'),
-        ], 'payment-gateway-stripe');
     }
 
     /**
