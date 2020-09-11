@@ -1,5 +1,5 @@
 {
-  "name": "@refineddigital/payment-gateway-stripe",
+  "name": "@refineddigital/cms-payment-gateway-stripe",
   "version": "1.0.1",
   "scripts": {
     "publish-and-tag": "git push --tags && git push origin master",
