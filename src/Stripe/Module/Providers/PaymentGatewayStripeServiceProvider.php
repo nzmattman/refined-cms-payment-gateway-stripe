@@ -3,7 +3,7 @@
 namespace RefinedDigital\PaymentGateways\Stripe\Module\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use RefinedDigital\CMS\Modules\Core\Models\PaymentGatewayAggregate;
+use RefinedDigital\CMS\Modules\Core\Aggregates\PaymentGatewayAggregate;
 
 class PaymentGatewayStripeServiceProvider extends ServiceProvider
 {
