@@ -16,13 +16,13 @@
   ],
   "autoload": {
     "psr-4": {
-      "RefinedDigital\\PaymentGateways\\Stripe\\": "src/"
+      "RefinedDigital\\Stripe\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "RefinedDigital\\PaymentGateways\\Stripe\\Module\\Providers\\PaymentGatewayStripeServiceProvider"
+        "RefinedDigital\\Stripe\\Module\\Providers\\PaymentGatewayStripeServiceProvider"
       ],
       "aliases": {
       }

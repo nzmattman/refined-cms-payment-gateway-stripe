@@ -1,6 +1,6 @@
 <?php
 
-namespace RefinedDigital\PaymentGateways\Stripe\Module\Providers;
+namespace RefinedDigital\Stripe\Module\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use RefinedDigital\CMS\Modules\Core\Aggregates\PaymentGatewayAggregate;
@@ -28,6 +28,6 @@ class PaymentGatewayStripeServiceProvider extends ServiceProvider
     public function register()
     {
         app(PaymentGatewayAggregate::class)
-            ->addGateway('Stripe', \RefinedDigital\PaymentGateways\Stripe\Module\Classes\Stripe::class);
+            ->addGateway('Stripe', \RefinedDigital\Stripe\Module\Classes\Stripe::class);
     }
 }
