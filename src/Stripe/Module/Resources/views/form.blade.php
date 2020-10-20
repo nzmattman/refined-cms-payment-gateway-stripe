@@ -43,7 +43,7 @@
   }
 
   // Submit the form with the token ID.
-  function stripeTokenHandler(token) {
+  function stripeTokenHandler{{ $form->id }}(token) {
     // Insert the token ID into the form so it gets submitted to the server
     let hiddenInput = document.createElement('input');
     hiddenInput.setAttribute('type', 'hidden');
@@ -69,7 +69,7 @@ else {
             errorElement.textContent = result.error.message;
           } else {
             // Send the token to your server.
-            stripeTokenHandler(result.token);
+            stripeTokenHandler{{ $form->id }}(result.token);
           }
         });
       }
