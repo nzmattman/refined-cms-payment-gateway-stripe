@@ -1,6 +1,6 @@
 <?php
 
-namespace RefinedDigital\Stripe\Module\Classes;
+namespace RefinedDigital\PaymentGatewayStripe\Module\Classes;
 
 use RefinedDigital\CMS\Modules\Core\Classes\PaymentGateway;
 use RefinedDigital\CMS\Modules\Core\Contracts\PaymentGatewayInterface;
