@@ -59,7 +59,8 @@
 
 @section('form-submit-injection')
 else {
-      if(!formStripe{{ $form->id }} && document.getElementById('form-payment-gateway-stripe').checked) {
+      var field = document.querySelector('input[name="payment_gateway"]');
+      if(!formStripe{{ $form->id }} && field.value === 'stripe') {
         e.preventDefault();
 
         stripe.createToken(card).then(function(result) {
