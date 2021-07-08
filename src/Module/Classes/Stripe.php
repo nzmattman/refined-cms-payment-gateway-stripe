@@ -20,7 +20,7 @@ class Stripe extends PaymentGateway implements PaymentGatewayInterface {
         $gateway->setApiKey(env('STRIPE_SECRET'));
 
         $args = [
-            'amount' => $this->total,
+            'amount' => $this->roundNumber($this->total),
             'currency' => $this->currency,
             'token' => $request->get('stripeToken'),
             'description' => $this->description,
